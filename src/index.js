@@ -1,7 +1,12 @@
 const refObj = {
-    country:'Rome',
-    firstName:'Julius',
-    title:'Caeser'
+    country:'Italy',
+    food:'pasta',
+    footballLeague:'Serie-A'
 }
 
-console.log(refObj);
+const newRefObj={
+    ...refObj,
+    winner:'Napoli'
+}
+
+console.log(newRefObj);
