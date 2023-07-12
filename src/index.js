@@ -1,3 +1,4 @@
+import './styles/style.css'
 const refObj = {
     country:'Italy',
     food:'pasta',
