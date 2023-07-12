@@ -6,7 +6,7 @@ const refObj = {
 
 const newRefObj={
     ...refObj,
-    winner:'Napoli'
+    winner:'AC-Milan'
 }
 
 console.log(newRefObj);
