@@ -1,13 +1,10 @@
+import { render, createRoot } from 'react-dom/client';
 import './styles/style.scss'
-const refObj = {
-    country:'Italy',
-    food:'pasta',
-    footballLeague:'Serie-A'
-}
+import App from './components/App'
+// render(<h1>R to webpack</h1>, document.getElementById("root"));
 
-const newRefObj={
-    ...refObj,
-    winner:'AC-Milan'
-}
-
-console.log(newRefObj);
+const rootElement = document.getElementById("root");
+const root = createRoot(rootElement);
+root.render(
+    <App />
+);

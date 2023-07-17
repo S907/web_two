@@ -7,7 +7,8 @@ if(process.env.NODE_ENV == "production"){
 }
 module.exports={
     mode:mode,
-
+    entry: "./src/index.js",
+    
     module:{
         rules:[
             {
@@ -15,7 +16,7 @@ module.exports={
                 use:[MiniCssPlugin.loader, "css-loader", "sass-loader"]
             },
             {
-                test:/\.js$/,
+                test:/\.jsx?$/,
                 exclude:/node_modules/,
                 use:{
                     loader:"babel-loader",
@@ -25,6 +26,9 @@ module.exports={
     },
 
     plugins:[new MiniCssPlugin()],
+    resolve:{
+        extensions: [".js", ".jsx"],
+      },
 
     devtool:"source-map",
     devServer:{
