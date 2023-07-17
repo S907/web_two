@@ -1,4 +1,4 @@
-@use 'variable';
+@use "variable";
 
 body {
     background: linear-gradient(180deg, variable.$bg_one, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);

@@ -12,7 +12,7 @@ module.exports={
         rules:[
             {
                 test:/\.s?css$/i,
-                use:[MiniCssPlugin.loader, "css-loader"]
+                use:[MiniCssPlugin.loader, "css-loader", "sass-loader"]
             },
             {
                 test:/\.js$/,
@@ -31,5 +31,6 @@ module.exports={
         static: {
             directory: path.join(__dirname, 'dist'),
           },
-    },
+         
+    }
 }
